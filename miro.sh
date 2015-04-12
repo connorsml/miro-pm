@@ -12,4 +12,4 @@ fi
 
 DJANGO_SETTINGS_MODULE='miro_pm.dev_settings'
 export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
-python miro_pm/manage.py runserver
+python manage.py runserver
