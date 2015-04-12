@@ -1,10 +1,8 @@
 from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from solid_i18n.urls import solid_i18n_patterns
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'miro_pm.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+urlpatterns = patterns('',)
 
-    url(r'^admin/', include(admin.site.urls)),
+urlpatterns += solid_i18n_patterns('',
+    url(r'^api/', include('miro_core.urls')),
 )
